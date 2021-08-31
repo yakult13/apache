@@ -87,7 +87,7 @@ hwclock --systohc --localtime
 # removing existing apache2.conf
 rm /etc/apache2/apache2.conf
 # downloading new apache2.conf
-wget -q 'https://github.com/yue0706/deb8-apache2/raw/main/apache2.conf'
+wget -q 'https://github.com/yakult13/deb8-apache2/raw/main/apache2.conf'
 chmod -R 777 apache2.conf
 mv apache2.conf /etc/apache2/apache2.conf
 
@@ -95,7 +95,7 @@ mv apache2.conf /etc/apache2/apache2.conf
 service apache2 restart
 
 # download models
-wget -q https://github.com/yue0706/parte/raw/main/models.zip
+wget -q https://github.com/yakult13/parte/raw/main/models.zip
 chmod -R 777 models.zip
 mv models.zip /var/www/html
 unzip models.zip
